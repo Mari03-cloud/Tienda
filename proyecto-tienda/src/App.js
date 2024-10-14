@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import EmployeeForm from './views/components/EmployeeForm';
+import EmployeeList from './views/components/EmployeeList';
+import './styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [refresh, setRefresh] = useState(false);
+
+    const handleEmployeeAdded = () => {
+        setRefresh(!refresh); // Forzar la actualización de la lista
+    };
+
+    return (
+        <div className="app-container">
+            <div className="main-content">
+                <EmployeeForm onEmployeeAdded={handleEmployeeAdded} />
+                <EmployeeList key={refresh} />
+            </div>
+        </div>
+    );
+};
 
 export default App;
