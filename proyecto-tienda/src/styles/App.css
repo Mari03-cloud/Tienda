@@ -1,23 +1,42 @@
 /* src/styles/App.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
 .app-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #f0f8ff;
+    align-items: center;
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
 }
 
 .main-content {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Espacio entre el formulario y la tabla */
+    width: 80%;
+    max-width: 1200px; /* Limita el tamaño máximo del contenedor */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-container, .list-container {
+    flex: 1;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+}
+
+.form-container {
+    max-width: 400px;
 }
 
 h2 {
@@ -27,12 +46,13 @@ h2 {
 input {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
     border: 1px solid #007bff;
     border-radius: 4px;
 }
 
 button {
+    width: 100%;
     padding: 10px 15px;
     background-color: #007bff;
     color: white;
@@ -45,6 +65,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+.list-container {
+    max-width: 700px; /* Asegura que la tabla tenga un tamaño considerable */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -52,7 +76,7 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px; /* Aumenta el padding para mayor legibilidad */
     text-align: left;
 }
 
@@ -63,4 +87,12 @@ th {
 
 tr:hover {
     background-color: #f1f1f1;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: calc(100% - 20px); /* Calcula el ancho para que se ajuste bien */
+    border-radius: 4px;
+    border: 1px solid #007bff;
 }
