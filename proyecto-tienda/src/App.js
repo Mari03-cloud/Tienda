@@ -1,24 +1,28 @@
-// src/App.js
-import React, { useState } from 'react';
-import EmployeeForm from './views/components/EmployeeForm';
-import EmployeeList from './views/components/EmployeeList';
-import './styles/App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import EmployeeForm from 'views/components/EmployeeForm';  // Vista de empleados
+import ProductForm from 'views/components/ProductForm';    // Vista de productos
+import './App.css';
 
-const App = () => {
-    const [refresh, setRefresh] = useState(false);
-
-    const handleEmployeeAdded = () => {
-        setRefresh(!refresh); // Forzar la actualización de la lista
-    };
-
-    return (
-        <div className="app-container">
-            <div className="main-content">
-                <EmployeeForm onEmployeeAdded={handleEmployeeAdded} />
-                <EmployeeList key={refresh} />
-            </div>
+function App() {
+  return (
+    <Router>
+      <div className="app-container">
+        <nav>
+          <ul>
+            <li><Link to="/employees">Empleados</Link></li>
+            <li><Link to="/products">Productos</Link></li>
+          </ul>
+        </nav>
+        <div className="main-content">
+          <Routes>
+            <Route path="/employees" element={<EmployeeForm />} />
+            <Route path="/products" element={<ProductForm />} />
+          </Routes>
         </div>
-    );
-};
+      </div>
+    </Router>
+  );
+}
 
 export default App;
