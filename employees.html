@@ -102,27 +102,28 @@
                         <div class="col-sm-12 col-xl-6">
                             <div class="bg-secondary rounded h-100 p-4">
                                 <h6 class="mb-4">Registro De Empleados</h6>
-                                <form>
+                                <form action="employees.php" method="POST">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                        <input type="text" class="form-control" id="nombre" name="nombre_empleado" placeholder="Nombre" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="apellidoPaterno" placeholder="Apellido Paterno">
+                                        <input type="text" class="form-control" id="apellidoPaterno" name="apellido_paterno" placeholder="Apellido Paterno" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="apellidoMaterno" placeholder="Apellido Materno">
+                                        <input type="text" class="form-control" id="apellidoMaterno" name="apellido_materno" placeholder="Apellido Materno" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="cargo" placeholder="Cargo">
+                                        <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                                        <input type="text" class="form-control" id="telefono" name="celular" placeholder="Teléfono" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                                        <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" required>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Guardar</button>
                                 </form>
+                                
                                 
                             </div>
                         </div>
@@ -148,30 +149,6 @@
                                                 <th scope="col" style="width: 20%; padding: 5px;">Acciones</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 5px;">Juan</td>
-                                                <td style="padding: 10px;">Pérez</td>
-                                                <td style="padding: 10px;">González</td>
-                                                <td style="padding: 5px;">Gerente</td>
-                                                <td style="padding: 5px;">555-1234</td>
-                                                <td style="padding: 5px;">
-                                                    <button>Editar</button>
-                                                    <button>Eliminar</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 5px;">Ana</td>
-                                                <td style="padding: 10px;">Rodríguez</td>
-                                                <td style="padding: 10px;">Lopez</td>
-                                                <td style="padding: 5px;">Asistente</td>
-                                                <td style="padding: 5px;">555-5678</td>
-                                                <td style="padding: 5px;">
-                                                    <button>Editar</button>
-                                                    <button>Eliminar</button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
                                     </table>
                                     
 

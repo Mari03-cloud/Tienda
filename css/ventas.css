@@ -1,0 +1,31 @@
+/* Modificaciones específicas para el contenedor */
+.container-fluid {
+    background-color: #343a40; /* Cambia el color de fondo del contenedor */
+}
+
+/* Modificaciones específicas para la fila */
+.row.vh-100.bg-secondary {
+    background-color: #f5f7f8 !important; /* Cambia el color de fondo de la fila */
+    align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
+}
+
+/* Modificaciones específicas para el título */
+h6.display-4 {
+    color: #111111 !important; /* Cambia el color del texto del título */
+    margin-top: -1px; /* Mueve el texto 10px hacia arriba */
+}
+
+/* Modificaciones específicas para el botón */
+.btn-primary.rounded-pill {
+    background-color: #007bff !important; /* Cambia el color de fondo del botón */
+    border-color: #007bff !important; /* Cambia el color del borde del botón */
+}
+
+/* Modificaciones para ajustar la longitud del contenido */
+.full-height {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5px; /* Ajusta el espacio en la parte superior */
+}
