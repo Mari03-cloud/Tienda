@@ -1,11 +1,13 @@
 /* Establece el tamaño de los cuadros de entrada */
+
+
 .form-control {
     width: 300px !important; /* Ancho fijo de 300px */
     height: 40px !important; /* Altura fija de 40px */
     font-size: 14px !important; /* Tamaño de la fuente */
     padding: 8px !important; /* Espacio interior */
     border-radius: 5px !important; /* Bordes redondeados */
-    border: 1px solid #1d1b1b !important; /* Color del borde */
+    border: 1px solid #2082f2 !important; /* Color del borde */
     box-sizing: border-box !important; /* Para que el padding no afecte al tamaño */
 }
 
