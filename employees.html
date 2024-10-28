@@ -113,8 +113,17 @@
                                         <input type="text" class="form-control" id="apellidoMaterno" name="apellido_materno" placeholder="Apellido Materno" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo" required>
+                                        <label for="cargo" class="form-label">Cargo</label>
+                                        <select class="form-control" id="cargo" name="cargo" required>
+                                            <option value="" disabled selected>Selecciona un cargo</option>
+                                            <option value="Gerente">Gerente</option>
+                                            <option value="Administrador">Administrador</option>
+                                            <option value="Supervisor">Supervisor</option>
+                                            <option value="Empleado">Empleado</option>
+                                            <option value="Asistente">Asistente</option>
+                                        </select>
                                     </div>
+                                    
                                     <div class="mb-3">
                                         <input type="text" class="form-control" id="telefono" name="celular" placeholder="Teléfono" required>
                                     </div>
