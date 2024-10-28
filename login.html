@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="css/login.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+</head>
+<body>
+  <div class="login-box">
+    <p>Iniciar Sesión</p>
+    <form id="loginForm" action="login.php" method="POST">
+      <div class="user-box">
+        <input id="username" required name="username" type="text">
+        <label>Usuario</label>
+      </div>
+      <div class="user-box">
+        <input id="password" required name="password" type="password">
+        <label>Contraseña</label>
+      </div>
+      <button type="submit" id="loginBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Entrar
+      </button>
+    </form>
+    <p>No tienes una cuenta? <a href="#" class="a2">¡Regístrate!</a></p>
+  </div>
+</body>
+</html>

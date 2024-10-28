@@ -1,0 +1,19 @@
+/* Establece el tamaño de los cuadros de entrada */
+.form-control {
+    width: 300px !important; /* Ancho fijo de 300px */
+    height: 40px !important; /* Altura fija de 40px */
+    font-size: 14px !important; /* Tamaño de la fuente */
+    padding: 8px !important; /* Espacio interior */
+    border-radius: 5px !important; /* Bordes redondeados */
+    border: 1px solid #177be6 !important; /* Color del borde */
+    box-sizing: border-box !important; /* Para que el padding no afecte al tamaño */
+}
+
+/* Estilo para el botón */
+button[type="submit"] {
+    width: 50%; /* Ancho del botón al 100% del contenedor */
+    height: 45px; /* Altura del botón */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Separación superior */
+}
